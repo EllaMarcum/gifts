@@ -4,10 +4,14 @@ export class Gift {
     this.opened = data.opened
     this.tag = data.tag
     this.url = data.url
-    this.createdAt = data.createdAt
-    this.updatedAt = data.updatedAt
-
     this.id = data.id
   }
 
+
+  get GiftTemplate() {
+    return ` <div class="col-6">
+    <img src"${this.url}"></div>
+    </section>
+  </div>`
+  }
 }
